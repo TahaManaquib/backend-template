@@ -1,1 +1,25 @@
+# branch=$(git symbolic-ref --short HEAD)
+
+# # Pattern for branch name: AB-feature/add-login-ui
+# pattern='^([A-Z]{2}-(feature|fix|docs|style|refactor|perf|test|chore|revert))\/[a-z0-9-]+$'
+# # Pattern for branch name: JIRA-123/fix-auth
+# pattern='^([A-Z]+-[0-9]+)\/[a-z0-9-]+$'
+
+# if ! echo "$branch" | grep -Eq "$pattern"; then
+#   echo "❌ ERROR: Invalid branch name: $branch"
+#   echo ""
+#   echo "👉 Allowed examples:"
+#   echo "   AB-feature/add-login-ui"
+#   echo "   JIRA-123/fix-auth"
+#   echo ""
+#   echo "💡 To fix this, rename your branch:"
+#   echo "   git branch -m <correct-branch-name>"
+#   echo ""
+#   echo "Example:"
+#   echo "   git branch -m AB-feature/add-login-ui"
+#   echo ""
+#   exit 1
+# fi
+
+# Run lint-staged
 npx lint-staged
