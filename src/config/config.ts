@@ -4,7 +4,7 @@ dotenvFlow.config();
 
 export default {
   // General
-  ENV: process.env.ENV,
+  NODE_ENV: process.env.NODE_ENV,
   PORT: process.env.PORT,
   SERVER_URL: process.env.SERVER_URL,
 
